@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body id="body-formulario">
+    <header class="header">
+        <div id="cabecera">
+            <a href="https://es.wikipedia.org/wiki/Europa" target="_blank" class="logo">Descubriendo Europa</a>
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="top5.html">Top 3</a></li>
+                    <li><a href="tiempo.html">Tiempo</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="menu">
+        <div class="menu"></div>
+    </main>
+       
+    <div id="caja-formulario"> 
+        <h1> <p> Formulario de Reserva </p> </h1>
+        <form id="form-formulario" action="procesar.php" method="get" >
+            <fieldset id="fieldset-formulario">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" value="" />
+            <br/>
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" value="" />
+            <br/>
+            <br/>
+            <label>Dia reserva:</label>
+            <input type="date" id="start" name="trip-start" value="2021-07-22" min="2021-01-01" max="2022-12-31">
+            <br/>
+            <label>Selecciona hora deseada:</label>
+            <input type="time" name="Hora" value="24h" min="13:00" max="23:00" >
+            <br>
+            <label>Nº de personas :</label>
+            <input type="text" name="Nº de personas" value="" />
+            <br>
+            <br/>
+            <label>Nombre del Restaurante:</label>
+            <input type="text" name="Nombre del Restaurante" value="" />
+            <br/>
+            <label for="pais">Pais del restaurante:</label>
+            <select name="pais">  
+            <option value="Se" selected="selected">Selecciona pais...</option>
+            <option value="Es">España</option>
+            <option value="It">Italia</option>
+            <option value="Ho">Holanda</option>
+            <option value="Ta">Francia</option>
+            <option value="Us">Suiza</option>
+            </select>
+            <br/>
+            <label for="ciudad">Ciudad del restaurante:</label>
+            <select name="ciudad">  
+            <option value="Se" selected="selected">Selecciona ciudad...</option>
+            <option value="AM">Amsterdam</option>
+            <option value="MA">Madrid</option>
+            <option value="RO">Roma</option>
+            <option value="BA">Paris</option>
+            <option value="CH">Chiang Mai</option>
+            <option value="Kr">Krabi</option>
+            <option value="Ne">New York</option>
+            <option value="Lo">Los Angeles</option>
+            <option value="Lo">Mexico</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="Observaciones">Observaciones</label>
+            <textarea id="Observaciones" name="Observaciones" cols="40" rows="5"></textarea>
+            <br/>
+            <input type="submit" value="Enviar" form action="">
+            </form>
+        </fieldset>
+    </div>
+
+
+    <footer class="footer-formulario"><div id="pie"><strong>Pagina diseñada por, Fidel Angel Arcos Garcia</strong></div></footer>
+</body>
+</html>
